@@ -3,7 +3,7 @@ package org.task.fizzbuzz;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FizzBuzz {
+public class FizzBuzzStatic {
 
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";

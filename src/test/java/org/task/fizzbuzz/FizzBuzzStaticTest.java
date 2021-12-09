@@ -6,8 +6,8 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FizzBuzzTest {
-    private final FizzBuzz FizzBuzz = new FizzBuzz();
+class FizzBuzzStaticTest {
+    private final FizzBuzzStatic fizzBuzz = new FizzBuzzStatic();
 
     @Test
     void testStaticFizzBuzz() {
@@ -19,7 +19,7 @@ public class FizzBuzzTest {
                 "Buzz", "11", "Fizz", "13", "14", "Fizz");
 
         // when
-        List<String> actual = FizzBuzz.generate(bound);
+        List<String> actual = fizzBuzz.generate(bound);
 
         // then
         assertThat(actual).isEqualTo(expected);
